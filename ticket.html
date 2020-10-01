@@ -6,7 +6,7 @@
     <meta name="description" content="Film ticket" />
     <meta http-equiv="refresh" content="100000" />
     <meta name="keyboards" content="film" />
-    <title>Kush's Website</title>
+    <title>Book Tickets</title>
 </head>
 
     <header>
@@ -38,13 +38,22 @@
     </header> 
     <body>
         <section id="booking_headings">
-            <p>Cinema: <b>Festival Walk Cinema</b> 
-                <br>Time: <b>12PM Oct 3</b>
-                <br>House: <b>1</b>
-                <br>Movie: <b>Barbecue</b></p>
-                <h3 align="center">Seating chart</h3>
-                <p><br></p>
-                <h4 align="center">Movie Screen</h4>
+            
+            <form>
+                <label for="cinema">Cinema: </label> 
+                <input type="text" name="cinema" value="Festival Walk Cinema" readonly>
+                <br>
+                <label for="time">Time: </label> 
+                <input type="text" name="time" value="12PM Oct 3" readonly> 
+                <br>
+                <label for="house">House: </label> 
+                <input type="text" name="house" value="1" readonly> 
+                <br>
+                <label for="movie">Movie: </label> 
+                <input type="text" name="movie" value="Barbecue" readonly>
+                <br>
+                 
+            </form>
             <table align="center">
                 <tr>
                     <td>
@@ -149,7 +158,7 @@
         </section>
     </body>
     <footer align="center">
-        <p>Copyright of everything belongs to owners of copyright.<br> Used for educational purpose | <a href="index.html">Home</a> | <a>Desgin</a></p>
+        <p>Copyright of everything belongs to owners of copyright.<br> Used for educational purpose | <a href="index.html">Home</a> | <a href="design.html">Desgin</a></p>
     </footer>
 
 </body>
