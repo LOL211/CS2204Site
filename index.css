@@ -1,0 +1,26 @@
+body video{
+    width: 25%;
+    height: 25%;
+}
+
+#Now_showing{
+    font-family: 'Montserrat', sans-serif;
+    display:block;
+    align-self: center;
+    align-items: center;
+    align-content: center;
+    align-self: start;
+
+}
+#Now_showing div{
+    display:flex;
+    text-align: center;
+}
+
+.heading{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    background-color: aqua;
+    font-size: 1.2rem;
+    padding:3rem;
+}

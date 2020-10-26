@@ -1,35 +1,44 @@
 
 @keyframes logoAnim{
 
-  0% {position: relative; right: 100px;}
-    50%{ position: relative;right: -100px;}
-    65%{ position: relative;right: 100px; }
+  0% {position: relative; right: 5%;}
+    50%{ position: relative;right: -5%;;}
+    65%{ position: relative;right: 5%;; }
     100%{ position: relative;right: 0px; }
 }
 
 
 
 #logo{
-   
 
- 
-      padding-left: 30%;
-   animation-name: logoAnim;
+   position: static;
+   
+    margin-left: 25%;
+    
+    
+  animation-name: logoAnim;
     animation-duration: 3s;
-  width: 5%;
-  height: 5%;
+    width: 5%;
+    height: 5%;
 }
+body{
+    background-color: #e8e8e8;
+    margin-top: 5%;
+}
+
 #menu {
+    font-family: 'Montserrat', sans-serif;
+    box-shadow: 0 4px  rgba(0,0,0,.05), 0 2px 4px rgba(0,0,0,.1), 0 1px 2px rgba(0,0,0,.15);
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
+    margin-top: 0px;
     display: flex;
     align-items: center;
     top: 0px;
     padding: 10px;
     z-index: 1;
-    border: 2px solid #4CAF50;
     background-color: white;
     
 }
@@ -39,22 +48,33 @@
     left:0;
     text-align: center;
     padding: 0px;
-    font-size: 3rem;
-    background-color: #4CAF50;
+    font-size: 3vw;
+   
 }
-#menu div{
+
+#t{
+   
     position: fixed;
     right:0;
     padding: 0px;
     text-align: right;
+
 }
 #menu a{
+  
+  text-decoration: none;
     margin-right: 0rem;
     position: relative;
-    padding-right: 1rem;
+    padding: 1rem;
     justify-content: space-between;
+    font-size: 2vw;
+    transition: .1s all linear;
    
    
+}
+#menu a:hover{
+    background: #e8e8e8;
+
 }
 
 footer{
