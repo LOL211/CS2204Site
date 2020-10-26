@@ -1,147 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link rel="stylesheet" type="text/css" href="default.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-    <link href="index.css" rel="stylesheet">
-   
-    <meta charset="UTF-8">
-    <meta name="author" content="Kush Banbah"/>
-    <meta name="description" content="Film ticket" />
-    <meta http-equiv="refresh" content="100000" />
-    <meta name="keyboards" content="film" />
-    <title>Home</title>
-</head>
-
-    
-
-    <body>
-          <header>
-            <nav id="menu"> 
-                  
-                   <p id="title">Kush Cinemas!</p>    
-                <img id="logo" src ="images/own.png" alt="company logo" /> 
-                   <div id="t">
-                   <a href="index.html"> Home</a>
-                   <a href="NowShowing.html"> Now showing</a>
-                   <a href="ticket.html"> Book</a>
+   <head>
+      <link rel="stylesheet" type="text/css" href="default.css">
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+      <link href="index.css" rel="stylesheet">
+      <meta charset="UTF-8">
+      <meta name="author" content="Kush Banbah"/>
+      <meta name="description" content="Film ticket" />
+      <meta http-equiv="refresh" content="100000" />
+      <meta name="keyboards" content="film" />
+      <title>Home</title>
+   </head>
+   <body>
+      <header>
+         <nav id="menu">
+            <p id="title">Kush Cinemas!</p>
+            <img id="logo" src ="images/own.png" alt="company logo" /> 
+            <div id="t">
+               <a href="index.html"> Home</a>
+               <a href="NowShowing.html"> Now showing</a>
+               <a href="ticket.html"> Book</a>
+            </div>
+         </nav>
+      </header>
+      <section id="Now_showing" >
+         <h2>Featured Movie</h2>
+         <div id="vid">
+            <video controls="controls">
+               <source src="https://courses.cs.cityu.edu.hk/cs2204/video/cakemaking-s.mp4" type="video/mp4">
+               <source src="https://courses.cs.cityu.edu.hk/cs2204/video/cakemaking-s.ogg" type="video/ogg" >
+               <p>The video is not working!</p>
+            </video>
+         </div>
+         <div>
+            <p><span class="heading">The Cake Movie </span> <span class="minor_heading"> <br>Now showing in cinemas </span><br><span class="minor_heading">Directed by:</span> Angry People  <span class="minor_heading">Cast:</span> Bakers, Crowds   <span class="minor_heading">Runtime:</span> 140 mins  <span class="minor_heading">Genre:</span> Fluffy, Slapping, Teamwork</p>
+         </div>
+      </section>
+      <h2 class="heading_section">Playing Now!</h2>
+      <div class="parent">
+         <div class="child">
+            <div class="parent">
+               <div class="childof">
+                  <h3>The Barbecue Movie!</h3>
+                  <img src="images/barbecue.jpg" alt="Thumbnail of movie" />
                </div>
-               </nav>
-            </header> 
-           
-        <section id="Now_showing" >
-            <h2>Featured Movie</h2>
-           
-        
-                 <div id="vid">
-                  <video controls="controls">
-                        <source src="https://courses.cs.cityu.edu.hk/cs2204/video/cakemaking-s.mp4" type="video/mp4">
-                        <source src="https://courses.cs.cityu.edu.hk/cs2204/video/cakemaking-s.ogg" type="video/ogg" >
-                        <p>The video is not working!</p>
-                    </video> 
-               
-                </div>
-                    <div>
-                    <p><span class="heading">The Cake Movie </span> <span class="minor_heading"> <br>Now showing in cinemas </span><br><span class="minor_heading">Directed by:</span> Angry People  <span class="minor_heading">Cast:</span> Bakers, Crowds   <span class="minor_heading">Runtime:</span> 140 mins  <span class="minor_heading">Genre:</span> Fluffy, Slapping, Teamwork</p>
-                </div>
-                  
-            
-           
-                    
-        </section>   
-                    
-           
-            
-            
-            
-            <table id="nowshowingtable">
-                <tr>
-                    <td colspan="3">
-                        <h2 >Movies now showing!</h2>
-                    </td>
-                </tr>
-                <tr>
-                   <td>
-                        <article class="movie_info" >
-                                <img src="images/barbecue.jpg" alt="Thumbnail of movie" />
-                                <h4>The Barbecue Movie!</h4>
-                                <p>Directed by: Steak Baker</p>
-                                <p>Cast: Steak, Grill, Electricity</p>
-                                <p>Runtime: 140 mins</p>
-                                <p>Genre: Hot, Grilling</p>
-
-                        </article>
-                    </td>       
-                    <td>
-                        <article class="movie_info" >
-                            <img src="images/bigbuck.jpg" alt="Thumbnail of movie" />
-                            <h4>The BigBuck Movie!</h4>
-                            <p>Directed by: Hunter Survivor</p>
-                            <p>Cast: Deers, Plants, Trees, Sun</p>
-                            <p>Runtime: 123 mins</p>
-                            <p>Genre: Relaxing, Green</p>
-                    </article>
-                     </td>
-                     <td>
-                        <article class="movie_info" >
-                            <img src="images/chocolate.jpg" alt="Thumbnail of movie" />
-                            <h4>The Chocolate Movie!</h4>
-                            <p>Directed by: French Baker</p>
-                            <p>Cast: Flour, Chocolate, Hersheys</p>
-                            <p>Runtime: 40 mins</p>
-                            <p>Genre: Obesity, Tasty, Scrumptious</p>
-                            
-                    </article>
-                     </td>
-                    </tr>
-                    <tr>
-                        <td colspan="3" >
-                            <h2>Upcoming movies you can look forward to!</h2>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                             <article class="movie_info" >
-                                     <img src="images/nature.jpg" alt="Thumbnail of movie" />
-                                     <h4>The Nature Movie!</h4>
-                                     <p>Directed by: David Attenborough</p>
-                                     <p>Cast: Birds, Animals, Humans, Sharks</p>
-                                     <p>Runtime: 150 mins</p>
-                                     <p>Genre: Natural, Windy, Informative</p>
-                             </article>
-                         </td>       
-                         <td>
-                             <article class="movie_info" >
-                                 <img src="images/wildlife.jpg" alt="Thumbnail of movie" />
-                                 <h4>The Landscape Movie!</h4>
-                                 <p>Directed by: Walter Mitty</p>
-                                 <p>Cast: Rocks, Rivers, Clouds, Skies</p>
-                                 <p>Runtime: 120 mins</p>
-                                 <p>Genre: Rocky, Dramatic, Suspenseful</p>
-                         </article>
-                          </td>
-                          <td>
-                             <article class="movie_info" >
-                                 <img src="images/wonders.jpg" alt="Thumbnail of movie" />
-                                 <h4>The Wonderful Movie!</h4>
-                                 <p>Directed by: Khufu</p>
-                                 <p>Cast: Egyptians, Bablyonians, Mughal King and Wives</p>
-                                 <p>Runtime: 120 mins</p>
-                                 <p>Genre: Desert, Awe, Inspiring</p>
-                                 <p></p>
-                         </article>
-                          </td>
-                         </tr>
-
-                 
-            </table>
-            
-            <hr>
-            <footer >
-                <p>Copyright of everything belongs to owners of copyright.<br> Used for educational purpose | <a href="index.html">Home</a> | <a href="design.html">Desgin</a></p>
-            </footer>
-  
-    </body>
- 
-
+               <div class="childof">
+                  <p>Directed by: Steak Baker<br>
+                     Cast: Steak, Grill, Electricity<br>
+                     Runtime: 140 mins<br>
+                     Genre: Hot, Grilling
+                  </p>
+               </div>
+            </div>
+         </div>
+         <div class="child">
+            <div class="parent">
+               <div class="childof">
+                  <h4>The BigBuck Movie!</h4>
+                  <img src="images/bigbuck.jpg" alt="Thumbnail of movie" />
+               </div>
+               <div class="childof">
+                  <p>Directed by: Hunter Survivor</p>
+                  <p>Cast: Deers, Plants, Trees, Sun</p>
+                  <p>Runtime: 123 mins</p>
+                  <p>Genre: Relaxing, Green</p>
+               </div>
+            </div>
+         </div>
+         <div class="child">
+            <div class="parent">
+               <div class="childof">
+                  <h4>The Chocolate Movie!</h4>
+                  <img src="images/chocolate.jpg" alt="Thumbnail of movie" />
+               </div>
+               <div class="childof">
+                  <p>Directed by: French Baker</p>
+                  <p>Cast: Flour, Chocolate, Hersheys</p>
+                  <p>Runtime: 40 mins</p>
+                  <p>Genre: Obesity, Tasty, Scrumptious</p>
+               </div>
+            </div>
+         </div>
+      </div>
+      <h2 class="heading_section">Now upcoming</h2>
+      <div class="parent">
+         <div class="child">
+            <div class="parent">
+               <div class="childof">
+                  <h4>The Nature Movie!</h4>
+                  <img src="images/nature.jpg" alt="Thumbnail of movie" />
+               </div>
+               <div class="childof">
+                  <p>Directed by: David Attenborough</p>
+                  <p>Cast: Birds, Animals, Humans, Sharks</p>
+                  <p>Runtime: 150 mins</p>
+                  <p>Genre: Natural, Windy, Informative</p>
+               </div>
+            </div>
+         </div>
+         <div class="child">
+            <div class="parent">
+               <div class="childof">
+                  <h4>The Landscape Movie!</h4>
+                  <img src="images/wildlife.jpg" alt="Thumbnail of movie" />
+               </div>
+               <div class="childof">
+                  <p>Directed by: Walter Mitty</p>
+                  <p>Cast: Rocks, Rivers, Clouds, Skies</p>
+                  <p>Runtime: 120 mins</p>
+                  <p>Genre: Rocky, Dramatic, Suspenseful</p>
+               </div>
+            </div>
+         </div>
+         <div class="child">
+            <div class="parent">
+               <div class="childof">
+                  <h4>The Wonderful Movie!</h4>
+                  <img src="images/wonders.jpg" alt="Thumbnail of movie" />
+               </div>
+               <div class="childof">
+                  <p>Directed by: Khufu</p>
+                  <p>Cast: Egyptians, Bablyonians, Mughal King and Wives</p>
+                  <p>Runtime: 120 mins</p>
+                  <p>Genre: Desert, Awe, Inspiring</p>
+                  <p></p>
+               </div>
+            </div>
+         </div>
+      </div>
+      </div>
+      <hr>
+      <footer >
+         <p>Copyright of everything belongs to owners of copyright.<br> Used for educational purpose | <a href="index.html">Home</a> | <a href="design.html">Desgin</a></p>
+      </footer>
+   </body>
 </html>
+COPY TO CLIPBOARD SELECT ALL
+© FreeFormatter.com - FREEFORMATTER is a d/b/a 

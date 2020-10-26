@@ -1,5 +1,5 @@
 body video{
-    width: 50%;
+    width: 40%;
     
 }
 
@@ -48,9 +48,72 @@ box-shadow: 0 4px  rgba(0,0,0,.05), 0 2px 4px rgba(0,0,0,.1), 0 1px 2px rgba(0,0
     background-color: black;
     color: white;
     width:100%;
-   
-  
-
  
 }
 
+#nowshowingtable{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#nowshowingtable td{
+ padding:10px;
+}
+.movie_info {
+    margin: 5px;
+    flex: 1 1 150px;}
+.movie_info p {
+    display: inline-block;
+float:right;
+font-size: 1rem;
+text-align: left;
+
+}
+.movie_info {
+    text-align: center;
+    display: inline-block;
+}
+.parent {
+    padding: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+  }
+  
+  .child {
+  
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+    flex: 1 1 10px;
+    max-width: 450px;
+    transition: .1s all linear;
+   
+  }
+  .child:hover{
+
+    box-shadow: 0 4px  rgba(0,0,0,.05), 0 2px 4px rgba(0,0,0,.1), 0 1px 2px rgba(0,0,0,.15);
+
+  }
+  .childof{
+  
+    flex: 1 1 10px;
+  }
+  .child p{
+  font-size: 1.2rem;
+
+  }
+  .heading_section{
+    padding-top: 50px;
+    left: 0;
+    right: 0;
+   display: flex;
+   background-color: black;
+   color: white;
+    text-align: center;
+    display: block;
+    padding-bottom:  50px;
+    font-size: 3rem;
+    font-weight: lighter;
+  }
