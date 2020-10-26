@@ -9,42 +9,48 @@ display:block;
 margin: auto;
 text-align: center;
 
-
-
-
+box-shadow: 0 4px  rgba(0,0,0,.05), 0 2px 4px rgba(0,0,0,.1), 0 1px 2px rgba(0,0,0,.15);
+  background-color: rgb(255, 255, 255);
 }
+
+
 
 
 #Now_showing h2{
-    margin-top: 5px;
+    padding-top: 50px;
     left: 0;
     right: 0;
    display: flex;
-    box-shadow: 0 4px  rgba(0,0,0,.05), 0 2px 4px rgba(0,0,0,.1), 0 1px 2px rgba(0,0,0,.15);
+   background-color: black;
+   color: white;
+    
     display: block;
-    padding-bottom:  20px;
+    padding-bottom:  50px;
     font-size: 3rem;
     font-weight: lighter;
-    background-color: white;
-}
-#Now_showing div{
-    background-image:url("images/filmreeel.png");
-background-repeat: no-repeat;
-background-size: cover;
-background-position: center;
-background-blend-mode: lighten;
-    display: flex;
-    align-items: center;
-    align-content: center;
-}
+}  
+#vid{
+       display: inline-block;
+       background-image:url("images/filmreeel.png");
+       background-repeat: no-repeat;
+       background-size: cover;
+       background-position: center;
+       background-blend-mode: lighten;
+       width:100%;
+         
+       
+      
 
-#Now_showing p, video{
-    padding: 30px;
-    text-align: center;
-   
-    display: inline-block;
+    
 }
-#Now_showing video{
-    margin-left: 25%;
+#Now_showing div+div{
+    display: inline-block;
+    background-color: black;
+    color: white;
+    width:100%;
+   
+  
+
+ 
 }
 
