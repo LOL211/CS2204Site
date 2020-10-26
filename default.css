@@ -1,34 +1,63 @@
 
-@keyframes logo{
+@keyframes logoAnim{
 
-    from{ position: relative; right: 100px;}
-    to{position: relative; right: 00px;}
+  0% {position: relative; right: 100px;}
+    50%{ position: relative;right: -100px;}
+    65%{ position: relative;right: 100px; }
+    100%{ position: relative;right: 0px; }
 }
 
 
 
-#test{
-   animation-name: logo;
+#logo{
+   
+   position: static;
+   align-content: center;
+   align-self: center;
+      padding-left: 25%;
+   animation-name: logoAnim;
     animation-duration: 3s;
-  
-  width: 15%;
-  height: 15%;
+  width: 5%;
+  height: 5%;
+}
+#menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    top: 0px;
+    padding: 10px;
+    z-index: 1;
+    border: 2px solid #4CAF50;
+    background-color: white;
+    
 }
 
-#menu{
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    background-color: yellow;
-    padding: 50px;
-    font-size: 20px;
+#title{   margin: 0%;
+    position: relative;
+    left:0;
+    text-align: center;
+    padding: 0px;
+    font-size: 3rem;
+    background-color: #4CAF50;
+}
+#menu div{
+    position: fixed;
+    right:0;
+    padding: 0px;
+    text-align: right;
+}
+#menu a{
+    margin-right: 0rem;
+    position: relative;
+    padding-right: 1rem;
+    justify-content: space-between;
+   
+   
 }
 
-/*
- position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    padding: 50px;
-  /*align-content: center;
-/*  background-color: yellow;
-text-align: center;*/
+footer{
+    text-align: center;
+}
