@@ -1,0 +1,67 @@
+#booking_headings{
+ 
+   
+  
+    box-shadow: 0 4px  rgba(0,0,0,.05), 0 2px 4px rgba(0,0,0,.1), 0 1px 2px rgba(0,0,0,.15);
+
+}
+#booking_headings h3{
+    font-size: 2rem;
+    margin: 0%;
+    padding: 20px;
+
+}
+#booking_headings table{
+    margin-left: 42%;
+
+padding-bottom: 40px;
+padding-top:20px;
+  
+}
+#booking_headings form{
+    padding-top:20px;
+    font-size: 1.4rem;
+}
+#booking_headings table td{
+    border: 1px solid black;
+    width: 50px;
+    
+}
+#booking_headings table td:hover{
+background-color:yellow;
+}
+
+#booking_headings th{
+    border: 1px solid black;
+    padding: 10px;
+}
+
+#confirm{
+    float: left;
+    background-color: white;
+    padding-left: 0;
+    margin-left: 5%;
+    padding: 10px;
+    border: 1px solid black;
+    
+    box-shadow: 0 4px  rgba(0,0,0,.05), 0 2px 4px rgba(0,0,0,.1), 0 1px 2px rgba(0,0,0,.15);
+}
+#confirm h3{
+    font-size: 2rem;;
+}
+
+#confirm p{
+    font-size: 1.7rem;
+}
+
+#seating{
+    text-align: center;
+    
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    
+}
+footer{
+    clear: both;
+}

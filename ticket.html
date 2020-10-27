@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" type="text/css" href="css/default.css">
+    <link rel="stylesheet" type="text/css" href="css/ticket.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="author" content="Kush Banbah"/>
     <meta name="description" content="Film ticket" />
@@ -12,36 +15,24 @@
     
     <body>
         <header>
-    
-            <img src ="images/own.png" alt="company logo" />  
-             <h1  id="title">Kush Cinemas!</h1>
+            <nav id="menu">
+               <p id="title">Kush Cinemas!</p>
+               <img id="logo" src ="images/own.png" alt="company logo" /> 
+               <div id="t">
+                  <a href="index.html"> Home</a>
+                  <a href="NowShowing.html"> Now showing</a>
+                  <a href="ticket.html"> Book</a>
+               </div>
+            </nav>
+         </header>
         
-            <nav>
-               
-                <div  id="menu">
-                    <table>
-                        <tr>
-                            <td>
-                                <a href="index.html"> Home</a>
-        
-                            </td>
-                            <td>
-                                <a href="NowShowing.html"> Now showing</a>
-                                
-                            </td>
-                            <td>
-                                <a href="ticket.html"> Book</a>
-                                
-                            </td>
-                        </tr>
-                    </table>
-                </div>
-             </nav>
-            </header> 
+       
         <section id="booking_headings">
+             
+            <div id="seating">
+            <h3 class="heading_section">Select Seats</h3>
            
-            <br><br>
-            <h3>Selected Movie</h3>
+          
             <form >
                 <label for="cinema">Cinema: </label> 
                 <input type="text" id="cinema" value="Festival Walk Cinema" readonly>
@@ -57,8 +48,17 @@
                 <br>
                  
             </form>
-            <br><br>
-            <table>
+            <div id="confirm">
+                <h4>Selected Tickets:</h4>
+                <p > <b>D5, D4</b></p>
+                
+                    <form>
+                       <a href="print.html"> <input type="button" value="Confirm"></a>
+                    </form>
+               
+            </div>
+
+            <table cellspacing="10px">
                 <tr>
                     
                     <th colspan="5">Movie Screen</th>
@@ -152,20 +152,10 @@
                     
                 </tr>
             </table>
-        </section>
-        <section id="selected_tickets">
-            <p><br></p>
-            
-            <h4>Selected Tickets:</h4>
-            <p > <b>D5, D4</b></p>
-            
-                <form>
-                   <a href="print.html"> <input type="button" value="Confirm"></a>
-                </form>
+            </div>
            
-        
         </section>
- 
+       
     <hr>
     <footer >
         <p>Copyright of everything belongs to owners of copyright.<br> Used for educational purpose | <a href="index.html">Home</a> | <a href="design.html">Desgin</a></p>
