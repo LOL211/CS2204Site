@@ -14,8 +14,9 @@
     padding: 0px;
     display: flex;
     flex-wrap: wrap;
+  
     justify-content: center;
-    transition: .1s all linear;
+   
   
   }
   
@@ -67,8 +68,9 @@
         padding:10px;
     }
     .child img{
-        transition: .1s all linear;
-      margin:auto;
+        padding-left: 10px;
+       
+    
      float: left;
      padding-right: 20px;
       
