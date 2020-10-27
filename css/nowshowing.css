@@ -1,11 +1,21 @@
 
 
+  @keyframes increasefont{
+
+    0% { width: 20%;}
+      50%{  width: 25%;}
+    
+      100%{  width: 30%; }
+  }
+
+
 
 .parent {
     padding: 0px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    transition: .1s all linear;
   
   }
   
@@ -18,14 +28,30 @@
     transition: .1s all linear;
    
   }
-  .child:hover,  div.maps:hover{
+  .child:hover,div.maps:hover  {
   
-    box-shadow: 0 6px  rgba(0,0,0,.05), 0 2px 6px rgba(0,0,0,.1), 0 1px 2px rgba(0,0,0,.15);
+    box-shadow: 0 6px  rgba(0,0,0,.05), 0 4px 8px rgba(0,0,0,.1), 0 1px 2px rgba(0,0,0,.15);
   
+  }
+
+  .child:hover p{
+   font-size: 2rem;
+  
+  
+  
+  }
+  .child:hover img{
+    animation-name: increase;
+    animation-duration: 0.1s;
+   width: 30%;
+  
+  }
+  div.maps:hover{
+    flex: 1 1 50px;
   }
   .childof{
   
-    flex: 1 1 20px;
+    flex: 1 1 30px;
   }
  
     
@@ -41,6 +67,7 @@
         padding:10px;
     }
     .child img{
+        transition: .1s all linear;
       margin:auto;
      float: left;
      padding-right: 20px;
@@ -64,7 +91,7 @@
     padding: 10px;
     margin: 10px;
     flex: 1 1 10px;
-    
+        
     min-width: 300px;
     max-width: 450px;
     transition: .1s all linear;
@@ -79,14 +106,11 @@
         
     }
     div.desc_text{
+        margin: -5%;
         text-align: center; 
-        padding: 15px;
+        padding: 5px;
         font-size: 1.4rem;
     }
     footer{
         clear: both;
-    }/*
-        float: left; 
-        max-width: 300px;
-        height: auto;
-        min-width: 300px;
+    }
