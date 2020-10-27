@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" type="text/css" href="default.css">
+    <link rel="stylesheet" type="text/css" href="css/default.css">
+    <link rel="stylesheet" type="text/css" href="css/nowshowing.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="author" content="Kush Banbah"/>
@@ -26,9 +27,11 @@
       </header>
 
 
-            <h2 class="heading_section">Buy Tickets!</h2>
+        
+              <section id="main" > 
+                  
+            <h2 class="heading_section">Choose your movie!</h2>
     
-           
             <form id="cinemaselect" name="cinemaselection">
                 <label for="cinemas">Select Cinema: </label>
                 <select id="cinemas" name="cinemas">
@@ -38,98 +41,99 @@
                     <option value="IMAX">IMAX Cinema</option>                   
                 </select>
             </form>
-        
-              <section id="main" > 
-                  <h2>Movie Options!</h2>
-            <table >
-                <tr>
-                    <td >
-                       
-                        <img src ="images/barbecue.jpg" alt="Thumbnail of Movie" >
-
-                    </td>
-               
-                
-                    <td  >
-                        <p>Barbeue Movie</p>
-                        <form>
+                  <h2 class="heading">Movie Options!</h2>
+                        <div class = "parent">
+                            <div class= "child">
+                                <div class="childof">
+                                    <p>Barbeue Movie</p></div>
+                                    <div class="childof">
+                                    <img src ="images/barbecue.jpg" alt="Thumbnail of Movie" >
+                                </div>
+                                <div class="childof">
+                                    <form>
                            
-                            <select class="timings" name="timing">
-                                <option value="timing1">12PM October 3 House 1</option>
-                                <option value="timing2">5PM October 3 House 1</option>
-                                <option value="timing3">12PM October 4 House 1</option>
-                                <option value="timing3">5PM October 4 House 1</option>                   
-                            </select>
-                            <button type="button">Buy ticket!</button>
-                        </form>
-                    </td>
-                </tr>
-                <tr>
-                    <td >
-                       
-                        <img src ="images/bigbuck.jpg" alt="Thumbnail of Movie">
-
-                    </td>
-               
-                
-                    <td  >
-                        <p>BigBuck Movie!</p>
-                        <form>
+                                        <select class="timings" name="timing">
+                                            <option value="timing1">12PM October 3 House 1</option>
+                                            <option value="timing2">5PM October 3 House 1</option>
+                                            <option value="timing3">12PM October 4 House 1</option>
+                                            <option value="timing3">5PM October 4 House 1</option>                   
+                                        </select>
+                                        <button type="button">Buy ticket!</button>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="child">
+                                <div class="childof">
+                                    <p>BigBuck Movie!</p>
+                                    <img src ="images/bigbuck.jpg" alt="Thumbnail of Movie">
+                                </div>
+                                <div class="childof">
+                                    <form>
                            
-                            <select class="timings" name="timing">
-                                <option value="timing1">12PM October 3 House 2</option>
-                                <option value="timing2">5PM October 3 House 2</option>
-                                <option value="timing3">12PM October 4 House 2</option>
-                                <option value="timing3">5PM October 4 House 2</option>                   
-                            </select>
-                            <button type="button">Buy ticket!</button>
-                        </form>
-                    </td>
-                </tr>
-                <tr>
-                    <td >
-                       
-                        <img src ="images/chocolate.jpg" alt="Thumbnail of Movie" >
-
-                    </td>
-                    <td  >
-                        <p>Chocolate Movie</p>
-                        <form>
+                                        <select class="timings" name="timing">
+                                            <option value="timing1">12PM October 3 House 2</option>
+                                            <option value="timing2">5PM October 3 House 2</option>
+                                            <option value="timing3">12PM October 4 House 2</option>
+                                            <option value="timing3">5PM October 4 House 2</option>                   
+                                        </select>
+                                        <button type="button">Buy ticket!</button>
+                                    </form>
+                                </div>
+                                
+                            </div>
+                            <div class ="child">
+                                <div class="childof">
+                                      <p>Chocolate Movie</p>
+                                      <img src ="images/chocolate.jpg" alt="Thumbnail of Movie" >
+                                </div>
+                                <div class="childof">
+                                    <form>
                            
-                            <select class="timings" name="timing">
-                                <option value="timing1">12PM October 3 House 3</option>
-                                <option value="timing2">5PM October 3 House 3</option>
-                                <option value="timing3">12PM October 4 House 3</option>
-                                <option value="timing3">5PM October 4 House 3</option>                   
-                            </select>
-                            <button type="button">Buy ticket!</button>
-                        </form>
-                    </td>
-                </tr>
-            </table>
+                                        <select class="timings" name="timing">
+                                            <option value="timing1">12PM October 3 House 3</option>
+                                            <option value="timing2">5PM October 3 House 3</option>
+                                            <option value="timing3">12PM October 4 House 3</option>
+                                            <option value="timing3">5PM October 4 House 3</option>                   
+                                        </select>
+                                        <button type="button">Buy ticket!</button>
+                                    </form>
+                                </div>
+                            </div>
+
+                        </div>
+                       
+                        
+                       
+              
         </section>
         <section id="maplocations" >
-            <h3>Cinema Locations</h3>
-            <article class="maplocations">
-            <h4>Ayala Malls Cinema</h4>
-            <img src="images/atcmap.png" alt="Ayala Malls Cinema Map">
-            </article>
-            <article class="maplocations">
-            <h4>Festival Walk Cinema</h4>
-            <img src="images/festivalwalkmap.png" alt="Festival Walk Cinema Map">
-            </article>
-            <article class="maplocations">
-            <h4>IMAX Cinema</h4>
-            <img src="images/imaxmap.png" alt="IMAX Cinema Map">
-            </article>
-            <article class="maplocations">
-            <h4>Sureseats Cinema</h4>
-            <img src="images/sureseatsmap.png" alt="Sureseats Cinema Map">
-            </article>
-        </section>
+            <h2 class="heading_section">Cinema Locations</h2>
 
-        <hr>
-        <footer >
+                        <div id="adjust">
+                            <div class="maps">    
+                            <a href="images/atcmap.png" target="_blank"><img src="images/atcmap.png" alt="Ayala Malls Cinema Map"></a>
+                            <div class="desc_text"> <h4>Ayala Malls Cinema</h4>
+                                               </div>
+                            </div> 
+                            <div class="maps">
+                                <a href="images/festivalwalkmap.png" target="_blank"> <img src="images/festivalwalkmap.png" alt="Festival Walk Cinema Map"></a>
+                                <div class="desc_text"> <h4>Festival Walk Cinema</h4></div>
+                            </div> 
+                            <div class="maps">
+                                <a href="images/sureseatsmap.png" target="_blank"> <img src="images/sureseatsmap.png" alt="Sureseats Cinema Map"></a>
+                                <div class="desc_text"> <h4>Sureseats Cinema</h4></div>
+                            </div> 
+                            <div class="maps">
+                                <a href="images/imaxmap.png" target="_blank"> <img src="images/imaxmap.png" alt="IMAX Cinema Map"></a>
+                                <div class="desc_text">  <h4>IMAX Cinema</h4>
+                                </div>
+                            </div> 
+                        </div>
+                    </section>
+
+        <footer>
+            <br>
+            <hr>
             <p>Copyright of everything belongs to owners of copyright.<br> Used for educational purpose | <a href="index.html">Home</a> | <a href="design.html">Desgin</a></p>
         </footer>
     </body>

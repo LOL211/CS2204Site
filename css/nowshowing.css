@@ -1,0 +1,88 @@
+
+
+
+.parent {
+    padding: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  
+  }
+  
+  .child {
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+    flex: 1 1 10px;
+    max-width: 450px;
+    transition: .1s all linear;
+   
+  }
+  .child:hover{
+  
+    box-shadow: 0 6px  rgba(0,0,0,.05), 0 2px 6px rgba(0,0,0,.1), 0 1px 2px rgba(0,0,0,.15);
+  
+  }
+  .childof{
+  
+    flex: 1 1 20px;
+  }
+ 
+    
+    .child p{
+    font-size: 1.6rem;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 10px;
+    margin:0% 0% 4% 0%;
+    
+    }
+    .child form{
+        padding:10px;
+    }
+    .child img{
+      margin:auto;
+     float: left;
+     padding-right: 20px;
+      
+    }
+
+    #cinemaselect{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    div.maps img{
+        width: 100%;
+        height: auto;
+    
+    }
+    div.maps {
+        
+        margin: auto;
+        border: 1px solid #ccc;
+        
+        width: 300px;
+       height: 300px;
+        
+       background-color: white;
+       
+         
+    }
+    #adjust {
+        margin: auto;
+        display: flex;
+        align-items: center;
+        
+    }
+    div.desc_text{
+        text-align: center; 
+        padding: 15px;
+    }
+    footer{
+        clear: both;
+    }/*
+        float: left; 
+        max-width: 300px;
+        height: auto;
+        min-width: 300px;
