@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" type="text/css" href="css/default.css">
+    <link rel="stylesheet" type="text/css" href="css/print.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="author" content="Kush Banbah"/>
     <meta name="description" content="Film ticket" />
@@ -12,36 +15,21 @@
    
     <body>
         <header>
-    
-            <img src ="images/own.png" alt="company logo"/>  
-             <h1  id="title">Kush Cinemas!</h1>
-        
-            <nav>
-               
-                <div  id="menu">
-                    <table>
-                        <tr>
-                            <td>
-                                <a href="index.html"> Home</a>
-        
-                            </td>
-                            <td>
-                                <a href="NowShowing.html"> Now showing</a>
-                                
-                            </td>
-                            <td>
-                                <a href="ticket.html"> Book</a>
-                                
-                            </td>
-                        </tr>
-                    </table>
-                </div>
-             </nav>
-            </header> 
-    <section class="showticketsprint" >
-        <h2>Selected Tickets</h2>
+            <nav id="menu">
+               <p id="title">Kush Cinemas!</p>
+               <img id="logo" src ="images/own.png" alt="company logo" /> 
+               <div id="t">
+                  <a href="index.html"> Home</a>
+                  <a href="NowShowing.html"> Now showing</a>
+                  <a href="ticket.html"> Book</a>
+               </div>
+            </nav>
+         </header>
+    <section id="showticketsprint" >
+        <h2 class="heading_section">Selected Tickets</h2>
+
         <article class="showticketprint">
-            <h4>Ticket 1:</h4>
+            <h4>Ticket</h4>
             <form>
                 <label for="cinema">Cinema: </label> 
                 <input type="text" id="cinema" value="Festival Walk Cinema" readonly>
@@ -60,8 +48,8 @@
             </form>
         </article>
         <br>
-        <article id="showticketprint">
-            <h4>Ticket 2:</h4>
+        <article class="showticketprint">
+            <h4>Ticket</h4>
             <form>
                 <label for="cinema1">Cinema: </label> 
                 <input type="text" id="cinema1" value="Festival Walk Cinema" readonly>
