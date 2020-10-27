@@ -76,3 +76,15 @@ label{
 footer{
     clear: both;
 }
+input[type=button]{
+    font-size:1rem;
+    font-family: 'Montserrat', sans-serif;;
+    font-weight: bold;
+}
+form input[type=text]{
+    background:#e8e8e8;
+    
+    font-size:1rem;
+    font-family: 'Montserrat', sans-serif;;
+    font-weight: bold;
+}

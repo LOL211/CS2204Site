@@ -27,6 +27,7 @@
     flex: 1 1 10px;
     max-width: 450px;
     transition: .1s all linear;
+    border-radius: 20px;
    
   }
   .child:hover,div.maps:hover  {
@@ -34,24 +35,30 @@
     box-shadow: 0 6px  rgba(0,0,0,.05), 0 4px 8px rgba(0,0,0,.1), 0 1px 2px rgba(0,0,0,.15);
   
   }
+  
 
-  .child:hover p{
-   font-size: 2rem;
-  
-  
-  
+  @media screen and (min-width: 1300px)
+  {
+    .child:hover p{
+      font-size: 2rem;
+     }
+     .child:hover img {
+       animation-name: increase;
+       animation-duration: 0.1s;
+      width: 30%;
+     
+     }
+     .child:hover{
+      max-width:35%;
+    }
   }
-  .child:hover img{
-    animation-name: increase;
-    animation-duration: 0.1s;
-   width: 30%;
+
   
-  }
   div.maps:hover{
     flex: 1 1 50px;
   }
   .childof{
-  
+    
     flex: 1 1 30px;
   }
  
@@ -77,8 +84,9 @@
     }
 
     #cinemaselect{
-        font-size: 1.5rem;
+       
         text-align: center;
+       
     }
 
     div.maps img{
@@ -115,4 +123,35 @@
     }
     footer{
         clear: both;
+    }
+
+    #maplocations h3{
+      font-size:2rem;
+      padding:15px;
+    }
+
+   .timings{
+      background-color:  #e8e8e8;
+      font-size: 1rem;
+      padding:2px;
+      font-family: 'Montserrat', sans-serif;;
+      font-weight: bold;
+    }
+    button{
+      
+      height:40px;
+      font-family: 'Montserrat', sans-serif;;
+      font-weight: bold;
+     background-color: #e8e8e8;
+
+    }
+    #cinemas{
+      
+      font-size:1rem;
+      font-family: 'Montserrat', sans-serif;;
+      font-weight: bold;
+    }
+    #cinemaselect label{
+      font-size:1.5rem;
+     
     }
