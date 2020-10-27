@@ -94,3 +94,16 @@ body{
 footer{
     text-align: center;
 }
+.heading_section{
+    padding-top: 50px;
+    left: 0;
+    right: 0;
+   display: flex;
+   background-color: black;
+   color: white;
+    text-align: center;
+    display: block;
+    padding-bottom:  50px;
+    font-size: 3rem;
+    font-weight: lighter;
+  }
