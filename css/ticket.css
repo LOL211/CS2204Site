@@ -12,8 +12,8 @@
 
 }
 #booking_headings table{
-    margin-left: 42%;
-
+    margin-right: auto;
+    margin-left: 40%;
 padding-bottom: 40px;
 padding-top:20px;
   
@@ -33,21 +33,25 @@ background-color:yellow;
 
 #booking_headings th{
     border: 1px solid black;
+    background-color: black;
+    color: white;
     padding: 10px;
 }
 
 #confirm{
-    float: left;
+    float: right;
     background-color: white;
-    padding-left: 0;
-    margin-left: 5%;
+   
+    margin-right: 5%;
     padding: 10px;
-    border: 1px solid black;
+    border: 3px solid black;
     
     box-shadow: 0 4px  rgba(0,0,0,.05), 0 2px 4px rgba(0,0,0,.1), 0 1px 2px rgba(0,0,0,.15);
 }
-#confirm h3{
-    font-size: 2rem;;
+#confirm h4{
+    background-color: black;
+    color: white;
+    font-size: 1.5rem;;
 }
 
 #confirm p{
