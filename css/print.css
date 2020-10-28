@@ -21,7 +21,7 @@ padding: 10px;
    font-size: 1.5rem;
 }
 @media print{
-    h2,footer,header,hr{
+    img,h2,footer,header,hr{
         visibility: hidden;
     }
     
