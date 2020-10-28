@@ -108,7 +108,7 @@
        
          
     }
-    #adjust {
+    h3+div {
         padding: 30px;
     display: flex;
     flex-wrap: wrap;

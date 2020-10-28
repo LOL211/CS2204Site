@@ -1,6 +1,7 @@
 #showticketsprint{
 text-align: center;
 background-color: white;
+height:100%;
 
 }
 
@@ -9,19 +10,36 @@ background-color: white;
     padding: 15px;
 }
 
-.showticketprint{
+.ticket{
     
     
     margin: auto 0 auto 0;
     
 }
-.showticketprint h4{
+.ticket h4{
 margin-bottom: 0;
 padding: 10px;
    font-size: 1.5rem;
 }
 @media print{
-    img,h2,footer,header,hr{
+   
+    #menu{
+        width: 0;
+    }
+    body{
+        margin: 0 0 0 0;
+    }
+    h2+article{
+        break-after: page;
+    }
+    article{
+        
+       
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #menu,img,h2,footer,header,hr{
         visibility: hidden;
     }
     

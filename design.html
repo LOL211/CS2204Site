@@ -1,44 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" type="text/css" href="css/default.css">
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="author" content="Kush Banbah"/>
     <meta name="description" content="Film ticket" />
     <meta http-equiv="refresh" content="100000" />
     <meta name="keyboards" content="film" />
     <title>Design</title>
+    <style>
+        h3{
+            padding-left: 20px;
+        }
+        li{
+            padding: 10px;
+        }
+        p{
+            line-height: 150%;
+        }
+    </style>
 </head>
 
- 
+<header>
+      
+    <div id="menu">
+       <p id="title">Kush Cinemas!</p>
+       <ul id="links">
+          <li><a href="index.html"> Home</a></li>
+          <li><a href="NowShowing.html"> Now showing</a></li>
+          <li><a > Book</a>
+          </li>
+          </ul>
+         
+          <footer >
+             <hr>
+             <p>Copyright of everything belongs to owners of copyright.<br> Used for educational purpose<br> | <a href="index.html">Home</a> | <a href="design.html">Desgin</a></p>
+          </footer>
+    </div>
+ </header>
+ <body>
+    <img id="logo" src ="images/own.png" alt="company logo" />
+<h3>CW2 Desgin</h3>
+<ol>
+    <li><p>Sketch:</p>
+        <ul >
+            
+            <li>
+                <p>Sketch:</p>
+                <img src="" alt="Skecth of theme">
+            </li>
+            <li> 
+                <p> The main colors were a mix of black, grey and white.<br>The main theme was nav bar on the left vertically, logo on top and the content in between. The footer was included into the nav bar as well.</p>
+            </li>
+        </ul>
+    </li>
+    <li>
+        <p>Style Sheets:</p>
+        <ul>
+            <li>A default.css was used for all the common css between pages</li>
+            <li> <p>Each page also had it's own css file for it's unique content</p>
+                <ul>
+                    <li>Default.css contained all the CSS for the nav bar, basic theme like colors, common classes for headings and the logo animation</li>
+                    <li>index.css contained the page specific css for the index page. It managed adjusting of the video, flex box divs for the upcoming and now showing movies. The css made the page resizeable and moveable</li>
+                    <li>nowshowing.css contained the page specific css for the nowshowing page. The styling of the forms, the flexbox format similar to the index.css, hover effects and an animation for font increase on hover.</li>
+                    <li>ticket.css contained the page specific css for the ticket booking page. The table to hover over, the button for confirming to go to print page, confirmationg of tickets buying and styling of it's forms</li>
+                    <li> print.css contained the page specific css for print page. It managed the media query notably for print preview and stylized it's forms.</li>
+                </ul>
+            
+            </li>
+            
+            <li> No embedded sheets were used and all of the css was in the files (excluding this page)</li>
+            <li> <p>CSS3 Features:</p>
+                <ul>
+                    <li> Animation: Default.css Line 1 for logo Animation </li>
+                    <li> Animation: nowshowing.css Line 3 for increasing font on hover</li>
+                    <li> Use of Flexbox styling: Line 53, parent, child and childof class were used to make a responsive page<br> When the page would be resized, each of the divs would flex around, and also the content inside them would flex to match it. Also used on nowshowing Line 13 for same reason.</li>
+                    <li>Use of BoxShadow: Line 56, default.css, Line 12 and 77 index.css, Line 35 nowshowing.css, Line 5 and 51 of ticket.css.<br>The shadows were used to show partitons when backgrounds were same or give the effect of a div rising when the user hovered to make the website more interactive. </li>
+                    <li>Media Query: Line 44 default.css: This was used to adjust the size of the nav bar when resizing window. The body's margin was set according to nav bar's width which changed with resizing. So by setting a margin at first, a query was used to change it to a percent according to screen size.</li>
+                    <li>Media Query: Line 40 nowshowing.css: Media query was used to enable hover animations if the user's screen was wide enough. The hover animations would glitch with smaller screens so this was used.</li>
+                    <li>Media Query: Line 24 print.css: This was used to remove all elements other than the tickets when using print preview.</li>
+                </ul>
+            </li>
+            
+        </ul>
+    </li>
+    <li>Acknowledgements: Pictures of maps were from google maps, image on index.html is from: http://clipart-library.com/film-border-cliparts.html</li>
+</ol>
+    
 
-<body>
-    <header>
-    
-        <img src ="images/own.png" alt="company logo" />  
-         <h1  id="title">Kush Cinemas!</h1>   
-        
-        
-        <nav>
-            <div  id="menu">
-                <table>
-                    <tr>
-                        <td>
-                            <a href="index.html"> Home</a>
-    
-                        </td>
-                        <td>
-                            <a href="NowShowing.html"> Now showing</a>
-                            
-                        </td>
-                        <td>
-                            <a href="ticket.html"> Book</a>
-                            
-                        </td>
-                    </tr>
-                </table>
-            </div>
-         </nav>
-        </header> 
+<h3>CW 1 Desgin</h3>
 <p>
     <ol>
         <li>
@@ -108,7 +159,7 @@
 
 
 
-<hr>
+
 <footer >
     <p>Copyright of everything belongs to owners of copyright.<br> Used for educational purpose | <a href="index.html">Home</a> | <a href="design.html">Desgin</a></p>
 </footer></body>

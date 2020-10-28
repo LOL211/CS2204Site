@@ -28,7 +28,7 @@ p{
    margin-left: auto;
    margin-right: auto;
   animation-name: logoAnim;
-    animation-duration: 2s;
+    animation-duration: 3s;
     max-width: 10%;
     min-width:20%;
     background-color: white;
@@ -115,7 +115,8 @@ body{
    
    
 }
-#menu li:hover{
+#menu a:hover{
+    padding:5px;
     background: #e8e8e8;
 
 }
@@ -130,7 +131,7 @@ footer{
     width: 20%;
 }
 footer p {
-    font-size: 1vw;
+    font-size: 0.8vw;
 }
 .heading_section{
     padding-top: 50px;
