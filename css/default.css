@@ -41,6 +41,15 @@ body{
     font-family: 'Montserrat', sans-serif;
 }
 
+@media ( max-width: 1000px)
+{
+    body{
+        background-color: #e8e8e8;
+        margin-left: 20%;
+    }
+
+}
+
 #menu {
    top:0;
    left:0;
@@ -64,7 +73,7 @@ body{
 }
 
 #title{   
-  
+    
     padding-top:10px;
     margin: 0%;
     position: relative;
