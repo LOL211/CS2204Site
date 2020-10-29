@@ -45,6 +45,8 @@
       font-size: 2rem;
      }
      .child:hover img {
+       -webkit-animation-name: increase;
+       -webkit-animation-duration: 0.1s;
     animation-name: increase;
        animation-duration: 0.1s;
       width: 30%;
