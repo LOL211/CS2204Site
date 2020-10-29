@@ -96,6 +96,9 @@ input[type=button]{
     font-family: 'Montserrat', sans-serif;;
     font-weight: bold;
 }
+input[type=button]:hover{
+    cursor: pointer;
+}
 form input[type=text]{
 
     background:#e8e8e8;
