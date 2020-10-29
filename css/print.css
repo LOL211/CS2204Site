@@ -47,8 +47,8 @@ text-align: center;
         break-after: page;
     }
     article{
-        
-       
+        padding: 0px;
+       margin-top: 5%;
         display: block;
         margin-left: auto;
         margin-right: auto;
