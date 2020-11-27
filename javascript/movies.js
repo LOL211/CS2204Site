@@ -62,7 +62,7 @@ function getMovies() {
             id:6,
             type:"upcoming",
             thumbnail:"images/wonders.jpg",
-            src:"https://courses.cs.cityu.edu.hk/cs2204/video/wonders.mp4",
+            src:"https://courses.cs.cityu.edu.hk/cs2204/video/wonders.ogg",
             name:"The Wonderful Movie",
             cast:"Egyptians, Bablyonians, Mughal King and Wives",
             director:"Khufu",
@@ -73,9 +73,12 @@ function getMovies() {
     ]
 }
 
+
+
 function setvideo(source)
 {
-    document.getElementById("videoplayer").setAttribute("src", source);
+    document.getElementById("videoplayer").setAttribute("src",source );
+   
 }
 
 
@@ -86,7 +89,7 @@ function onloadmovies(){
     var upcoming = document.createElement("div");
     nowshowing.setAttribute("class", "parent");
     upcoming.setAttribute("class", "parent");
-    
+    var source;
     for(var c = 0; c<movies.length; c++)
     {
 
@@ -98,14 +101,19 @@ function onloadmovies(){
         
         var childof = document.createElement("div");
         childof.setAttribute("class","childof");
+       
         var img = document.createElement("img");
         img.src = movies[c].thumbnail;
-       img.addEventListener("click", setvideo(movies[c].src) );
+        let source = movies[c].src;
+   
+        img.setAttribute("alt","Movie is "+movies[c].name);
+        img.addEventListener("click",function(){ setvideo(source ) });
         var headin = document.createElement("h3");
         headin.innerHTML = movies[c].name;
 
         childof.appendChild(headin);
-        childof.appendChild(img);
+       
+       childof.appendChild(img);
         
         child.appendChild(childof);
 
