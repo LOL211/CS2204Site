@@ -72,24 +72,72 @@ function getMovies() {
         
     ]
 }
-
+const movies = getMovies();
 
 
 function setvideo(source)
 {
-    document.getElementById("videoplayer").setAttribute("src",source );
-   
-}
+    //movies=getMovies();
+   // source=source-1;
+    console.log(source);
+    //console.log(movies[Number(source)]);
+    document.getElementById("videoplayer").setAttribute("src", ""+source.src+"");
 
+    var titles =["Directed by: ","Cast: ","Runtime: ","Genre: "];
+    var data = [source.director, source.cast, source.duration, source.genre];
+   var para = document.getElementById("trailerheadings");
+    var spann = document.createElement("span");
+    para.innerHTML="";
+    spann.setAttribute("class","heading");
+    spann.innerHTML=source.name;
+    para.appendChild(spann);
+    para.innerHTML+="<br><br>"
+    // para.innerHTML='<span class="heading>'+source.name+'</span>\n';
+    for(var d = 0; d<4; d++)
+    {
+        var spantag = document.createElement("span");
+        spantag.setAttribute("class","minor_heading");
+        spantag.innerHTML=titles[d];
+        var node = document.createTextNode(data[d]+" ");
+        para.appendChild(spantag);
+        para.appendChild(node);
+    }
+
+
+    
+}
+let currentid=1;
 
 function onloadmovies(){
+    makemovies();
+    
+    setvideo(movies[0]);
+    
+document.getElementById("videoplayer").addEventListener("ended", function(){
+    console.log("yes");
+    keepgoing();
+})
+  
+}
 
-    var movies = getMovies();
+function keepgoing(){
+   
+ currentid++;
+    setTimeout(function(){
+        setvideo(movies[(currentid-1)%movies.length]);
+    }, 2000);
+
+
+
+}
+
+function makemovies(){
+   
     var nowshowing = document.createElement("div");
     var upcoming = document.createElement("div");
     nowshowing.setAttribute("class", "parent");
     upcoming.setAttribute("class", "parent");
-    var source;
+    
     for(var c = 0; c<movies.length; c++)
     {
 
@@ -104,10 +152,13 @@ function onloadmovies(){
        
         var img = document.createElement("img");
         img.src = movies[c].thumbnail;
-        let source = movies[c].src;
    
+        let ef = movies[c];
         img.setAttribute("alt","Movie is "+movies[c].name);
-        img.addEventListener("click",function(){ setvideo(source ) });
+
+        img.addEventListener("click",function(){ 
+            setvideo(ef); 
+        });
         var headin = document.createElement("h3");
         headin.innerHTML = movies[c].name;
 
