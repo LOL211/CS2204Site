@@ -9,6 +9,10 @@
       <meta name="description" content="Film ticket" />
       <meta http-equiv="refresh" content="100000" />
       <meta name="keyboards" content="film" />
+      <script src="javascript/movies.js">
+         
+      
+      </script>
       <title>Home</title>
       </head>
     
@@ -34,9 +38,8 @@
       <section id="Now_showing" >
          <h2>Featured Movie</h2>
          <div id="vid">
-            <video controls="controls">
-               <source src="https://courses.cs.cityu.edu.hk/cs2204/video/cakemaking-s.mp4" type="video/mp4">
-               <source src="https://courses.cs.cityu.edu.hk/cs2204/video/cakemaking-s.ogg" type="video/ogg" >
+            <video id="videoplayer" controls="controls">
+         
                <p>The video is not working!</p>
             </video>
          </div>
@@ -45,7 +48,11 @@
          </div>
       </section>
       <h2 class="heading_section">Playing Now</h2>
-      <div class="parent">
+      <div id="now">
+
+      </div>
+    
+      <!--<div class="parent">
          <div class="child">
             <div class="parent">
                <div class="childof">
@@ -89,9 +96,10 @@
                </div>
             </div>
          </div>
-      </div>
+      </div>-->
       <h2 class="heading_section">Now upcoming</h2>
-      <div class="parent">
+      <div id="upcoming"></div>
+     <!-- <div class="parent">
          <div class="child">
             <div class="parent">
                <div class="childof">
@@ -136,7 +144,7 @@
             </div>
          </div>
       </div>
-      
+-->      
     
      
    </body>
