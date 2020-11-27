@@ -1,4 +1,4 @@
-window.onload=onloadmovies;
+
 
 
 function getMovies() {

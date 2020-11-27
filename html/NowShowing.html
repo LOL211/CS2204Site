@@ -9,6 +9,11 @@
     <meta name="description" content="Film ticket" />
     <meta http-equiv="refresh" content="100000" />
     <meta name="keyboards" content="film" />
+    <!--<script src=" http://courses.cs.cityu.edu.hk/cs2204/cw3/cinemas.js"></script>-->
+    <script src="../javascript/cinemas.js"></script>
+    <script src="../javascript/movies.js"></script>
+    <script src="../javascript/nowshowing.js"></script>
+   
     <title>Now Showing movies</title>
 </head>
 
@@ -41,74 +46,11 @@
     
             <form id="cinemaselect" name="cinemaselection">
                 <label for="cinemas">Select Cinema: </label>
-                <select id="cinemas" name="cinemas">
-                    <option value="City Cinema">Festival Walk Cinema</option>
-                    <option value="Ayala Malls">Ayala Malls Cinemas</option>
-                    <option value="sureseats">Sureseats Cinema</option>
-                    <option value="IMAX">IMAX Cinema</option>                   
-                </select>
+                <select id="cinemas" name="cinemas"></select>
             </form>
-                  <h2 class="heading">Current Movies</h2>
-                        <div class = "parent">
-                            <div class= "child">
-                                <div class="childof">
-                                    <p>Barbeue Movie</p></div>
-                                    <div class="childof">
-                                    <img src ="../images/barbecue.jpg" alt="Thumbnail of Movie" >
-                                </div>
-                                <div class="childof">
-                                    <form>
-                           
-                                        <select class="timings" name="timing">
-                                            <option value="timing1">12PM October 3 House 1</option>
-                                            <option value="timing2">5PM October 3 House 1</option>
-                                            <option value="timing3">12PM October 4 House 1</option>
-                                            <option value="timing3">5PM October 4 House 1</option>                   
-                                        </select>
-                                        <button type="button">Buy ticket!</button>
-                                    </form>
-                                </div>
-                            </div>
-                            <div class="child">
-                                <div class="childof">
-                                    <p>BigBuck Movie!</p>
-                                    <img src ="../images/bigbuck.jpg" alt="Thumbnail of Movie">
-                                </div>
-                                <div class="childof">
-                                    <form>
-                           
-                                        <select class="timings" name="timing">
-                                            <option value="timing1">12PM October 3 House 2</option>
-                                            <option value="timing2">5PM October 3 House 2</option>
-                                            <option value="timing3">12PM October 4 House 2</option>
-                                            <option value="timing3">5PM October 4 House 2</option>                   
-                                        </select>
-                                        <button type="button">Buy ticket!</button>
-                                    </form>
-                                </div>
-                                
-                            </div>
-                            <div class ="child">
-                                <div class="childof">
-                                      <p>Chocolate Movie</p>
-                                      <img src ="../images/chocolate.jpg" alt="Thumbnail of Movie" >
-                                </div>
-                                <div class="childof">
-                                    <form>
-                           
-                                        <select class="timings" name="timing">
-                                            <option value="timing1">12PM October 3 House 3</option>
-                                            <option value="timing2">5PM October 3 House 3</option>
-                                            <option value="timing3">12PM October 4 House 3</option>
-                                            <option value="timing3">5PM October 4 House 3</option>                   
-                                        </select>
-                                        <button type="button">Buy ticket!</button>
-                                    </form>
-                                </div>
-                            </div>
-
-                        </div>
-                    </section>
+            <div id="test"></div>
+           
+             </section>
                         
                        
               
