@@ -205,3 +205,10 @@ function makemovies(){
 
 }
 
+function found(idd)
+{
+    for(let x = 0; x<movies.length;x++)
+        if(idd==movies[x].id)
+            return movies[x].name;
+
+}

@@ -9,10 +9,13 @@
     <meta name="description" content="Film ticket" />
     <meta http-equiv="refresh" content="100000" />
     <meta name="keyboards" content="film" />
+    <script src=" http://courses.cs.cityu.edu.hk/cs2204/cw3/cinemas.js"></script>
+    <script src="../javascript/movies.js"></script>
+    <script src="../javascript/ticket.js" ></script>
     <title>Book Tickets</title>
 </head>
 
- <body>
+ <body onload="setup()">
     <header>
       
         <div id="menu">
@@ -57,10 +60,10 @@
         </article>
              <div id="confirm">
                 <h4>Selected Tickets</h4>
-                <p > <b>D5, D4</b></p>
+                <p><b id="ticketsbooked"></b></p>
                 
-                    <form>
-                       <a href="print.html"> <input type="button" value="Confirm"></a>
+                    <form id='send'>
+                       <button name="tickets" type="submit" value="">Confirm</button>
                     </form>
                
             </div>

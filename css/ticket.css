@@ -94,13 +94,13 @@ label{
 footer{
     clear: both;
 }
-input[type=button]{
+button[type=submit]{
     
     font-size:1rem;
     font-family: 'Montserrat', sans-serif;;
     font-weight: bold;
 }
-input[type=button]:hover{
+button[type=submit]:hover{
     cursor: pointer;
 }
 form input[type=text]{
