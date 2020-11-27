@@ -44,8 +44,14 @@ text-align: center;
     body{
         margin: 0 0 0 0;
     }
-    h2+article{
+    article{
         break-after: page;
+    }
+    article:nth-last-child(2){
+        break-after: avoid;
+        break-before: avoid;
+        
+        
     }
     article{
         padding: 0px;
