@@ -3,7 +3,7 @@ window.onload = setup;
 function setup()
 {
     urlParams = new URLSearchParams(window.location.search);
-
+    
     let ind = urlParams.get('tickets');
   
     let index = ind.split(' ');

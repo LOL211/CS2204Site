@@ -33,8 +33,7 @@ header{
    -webkit-animation-name: logoAnim ;
    animation-duration: 3s;
    -webkit-animation-duration: 3s;
-  /*animation-name: logoAnim;
-    animation-duration: 3s;---!>*/
+ 
     max-width: 10%;
     min-width:20%;
     background-color: white;
@@ -139,6 +138,10 @@ body{
    
    
 }
+html{
+    scroll-behavior: smooth;
+}
+
 #menu a:hover{
     padding:5px;
     background: #e8e8e8;

@@ -41,7 +41,39 @@
         </div>
      </header>
     <img id="logo" src ="../images/own.png" alt="company logo" />
+    <h3>CW3: JavaScript</h3>
+     <ol>
+         <li>Overall use of JavaScript and explaination:
+            <p>
+                 Majority of the javascript used in the project was in external javascript files stored locally. The only use of javascript inside of html was in the body to call setup functions of thier own javascript files. All events were handled and set in javascript because majority of the objects were created dynamically. The only non javascript 'events' are the anchor/reference tags used to open different pages. All the events were handled in javascript, so it was choice to have them all be attached (other than setup on body load) in javascript too.
+            </p>
+            
+            <p>
+                 Use of InnerHTML and document.createElement():<br>I used innerHTML for more non-interactive or simple features like displaying forms, etc. I used docuement.creatElement for more complex pices like flexbox divs to generate them all properly and setup thier properties easily.Using innerHTML for them would make it too long and complex to debug, using createElement was long as well but cleaner and easier to understand.
+            </p>
+            <p> 
+                 Use of let, var and const: Most of the variables were let for ease and vars in for loops did not properly work when creating listners and setting function parameters dynamically. const was used to store getCinemas and getMovies to make it easy to refer to instead of calling the function multiple times.
+             </p> 
+         </li>
+         <li>Use of Event Handlers:
+             In Javascript<ul>
+                 <li>
+                     Movies.js: An event handler was used for when the video ended, then next video method should play, and an event handler was used for when you click on a image, it scrolls up to where the video player is and plays the trailer.
+                 </li>
+                 <li>
+                     NowShowing.js: An event handler was used for the selectbox to see if it was changed, and if so, then update the movie values.
+                 </li>
+                 <li>
+                     ticket.js: Used event handlers for onlick for table elements to update the boxes and set the tickets. Another event listner is added to make the mouse curor not a pointer to make it clear to the user it's no longer clickable
+                 </li>
+                 <li>
+                     print.js: No event handler was used for this page, since all the elements would be loaded on setup. The query string is processed into tickets and seperate show index then all the tickets are displayed.
+                 </li>
+             </ul>
+         </li>
+     </ol>
 <h3>CW2 Desgin</h3>
+
 <ol>
     <li><p>Sketch:</p>
         <ul >
