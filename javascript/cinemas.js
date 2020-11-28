@@ -62,6 +62,101 @@ function getCinemas() {
                     ]
                 }
             ]
+        },
+        {
+            branchName:"Citdy Cinema - Central",
+            movies:[
+                {
+                    id:1,
+                    shows:[
+                        {
+                            index:6,
+                            datetime:"11 Nov, Wed - 9:00am",
+                            house:4
+                        }
+                    ]
+                },
+                {
+                    id:1,
+                    shows:[
+                        {
+                            index:6,
+                            datetime:"11 Nov, Wed - 9:00am",
+                            house:4
+                        }
+                    ]
+                },
+                {
+                    id:1,
+                    shows:[
+                        {
+                            index:6,
+                            datetime:"11 Nov, Wed - 9:00am",
+                            house:4
+                        }
+                    ]
+                },
+                {
+                    id:1,
+                    shows:[
+                        {
+                            index:6,
+                            datetime:"11 Nov, Wed - 9:00am",
+                            house:4
+                        }
+                    ]
+                },
+                {
+                    id:1,
+                    shows:[
+                        {
+                            index:6,
+                            datetime:"11 Nov, Wed - 9:00am",
+                            house:4
+                        }
+                    ]
+                },
+                {
+                    id:1,
+                    shows:[
+                        {
+                            index:6,
+                            datetime:"11 Nov, Wed - 9:00am",
+                            house:4
+                        }
+                    ]
+                },
+                {
+                    id:1,
+                    shows:[
+                        {
+                            index:6,
+                            datetime:"11 Nov, Wed - 9:00am",
+                            house:4
+                        }
+                    ]
+                },
+                {
+                    id:1,
+                    shows:[
+                        {
+                            index:6,
+                            datetime:"11 Nov, Wed - 9:00am",
+                            house:4
+                        }
+                    ]
+                },
+                {
+                    id:6,
+                    shows:[
+                        {
+                            index:6,
+                            datetime:"11 Nov, Wed - 9:00am",
+                            house:4
+                        }
+                    ]
+                }
+            ]
         }
     ]
 }
