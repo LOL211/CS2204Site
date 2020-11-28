@@ -11,9 +11,6 @@ function setforms()
 {
     urlParams = new URLSearchParams(window.location.search);
     index = urlParams.get('showtime');
-
-   console.log(index);
-   console.log(cinemas);
    
    for(let x = 0; x<cinemas.length; x++)
     for(let c = 0; c<cinemas[x].movies.length; c++)
@@ -25,12 +22,9 @@ function setforms()
                 document.getElementById('time').setAttribute("value", cinemas[x].movies[c].shows[d].datetime);
                 document.getElementById('house').setAttribute("value", cinemas[x].movies[c].shows[d].house);
                 document.getElementById('movie').setAttribute("value", found(cinemas[x].movies[c].id));
-                
+                break;
             }
-            else
-            {
-                console.log(cinemas[x].movies[c].shows[d]);
-            }
+           
 
 }
 
@@ -49,6 +43,7 @@ form.getElementsByTagName("button")[0].setAttribute("value",index);
             {
 
                 tds[x].style.backgroundColor="yellow";
+
                 tds[x].addEventListener('mouseover',function(){
                     tds[x].style.cursor="default";
                 })

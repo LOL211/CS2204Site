@@ -7,7 +7,6 @@ function setup()
 {
     document.getElementById('cinemas').addEventListener("change",
         function(){
-            console.log("yes");
             setcinemas();
     });
 

@@ -36,6 +36,7 @@ function getMovies() {
             genre:"Obesity, Tasty, Scrumptious",
             duration: "40 mins"
         },
+        
         {
             id:4,
             type:"upcoming",
@@ -73,32 +74,31 @@ function getMovies() {
     ]
 }
 const movies = getMovies();
-
+let currentid=1;
+let titles =["Directed by: ","Cast: ","Runtime: ","Genre: "];
 
 function setvideo(source)
 {
-    //movies=getMovies();
-   // source=source-1;
-    console.log(source);
-    //console.log(movies[Number(source)]);
+  
+    
     document.getElementById("videoplayer").setAttribute("src", ""+source.src+"");
 
-    var titles =["Directed by: ","Cast: ","Runtime: ","Genre: "];
-    var data = [source.director, source.cast, source.duration, source.genre];
-   var para = document.getElementById("trailerheadings");
-    var spann = document.createElement("span");
+    
+    let data = [source.director, source.cast, source.duration, source.genre];
+    let para = document.getElementById("trailerheadings");
+    let spann = document.createElement("span");
     para.innerHTML="";
     spann.setAttribute("class","heading");
     spann.innerHTML=source.name;
     para.appendChild(spann);
     para.innerHTML+="<br><br>"
-    // para.innerHTML='<span class="heading>'+source.name+'</span>\n';
+ 
     for(var d = 0; d<4; d++)
     {
-        var spantag = document.createElement("span");
+        let spantag = document.createElement("span");
         spantag.setAttribute("class","minor_heading");
         spantag.innerHTML=titles[d];
-        var node = document.createTextNode(data[d]+" ");
+        let node = document.createTextNode(data[d]+" ");
         para.appendChild(spantag);
         para.appendChild(node);
     }
@@ -106,86 +106,72 @@ function setvideo(source)
 
     
 }
-let currentid=1;
+
 
 function onloadmovies(){
     makemovies();
-    
     setvideo(movies[0]);
     
 document.getElementById("videoplayer").addEventListener("ended", function(){
-    console.log("yes");
     keepgoing();
 })
   
 }
 
 function keepgoing(){
-   
  currentid++;
     setTimeout(function(){
         setvideo(movies[(currentid-1)%movies.length]);
     }, 2000);
-
-
-
 }
 
 function makemovies(){
    
-    var nowshowing = document.createElement("div");
-    var upcoming = document.createElement("div");
+    let nowshowing = document.createElement("div");
+    let upcoming = document.createElement("div");
     nowshowing.setAttribute("class", "parent");
     upcoming.setAttribute("class", "parent");
     
-    for(var c = 0; c<movies.length; c++)
+    for(let c = 0; c<movies.length; c++)
     {
 
-        var parent = document.createElement("div");
+        let parent = document.createElement("div"); //parent of the entire container, but child in the parent containing all the movies
         parent.setAttribute("class","child");
         
-        var child = document.createElement("div");
+        let child = document.createElement("div"); //parent of p
         child.setAttribute("class","parent");
         
-        var childof = document.createElement("div");
+        let childof = document.createElement("div");
         childof.setAttribute("class","childof");
        
-        var img = document.createElement("img");
+        let img = document.createElement("img");
         img.src = movies[c].thumbnail;
    
-        let ef = movies[c];
+        let currentmovie = movies[c];
         img.setAttribute("alt","Movie is "+movies[c].name);
 
         img.addEventListener("click",function(){ 
-            setvideo(ef); 
+            window.open("index.html#Now_showing","_self")
+            setvideo(movies[c]); 
         });
-        var headin = document.createElement("h3");
-        headin.innerHTML = movies[c].name;
-
-        childof.appendChild(headin);
-       
-       childof.appendChild(img);
-        
+        let heading = document.createElement("h3");
+        heading.innerHTML = movies[c].name;
+        childof.appendChild(heading);
+        childof.appendChild(img);
         child.appendChild(childof);
-
-        var textchild = document.createElement("div");
-        textchild.setAttribute("class", childof);
-        
-        var para = document.createElement("p");
-       
-        var titles =["Directed by: ","Cast: ","Runtime: ","Genre: "];
-        var data = [movies[c].director, movies[c].cast, movies[c].duration, movies[c].genre];
-        for(var d = 0; d<4; d++)
+        let para = document.createElement("p");
+        let data = [movies[c].director, movies[c].cast, movies[c].duration, movies[c].genre];
+        for(let d = 0; d<4; d++)
         {
-            var spantag = document.createElement("span");
+            let spantag = document.createElement("span");
             spantag.setAttribute("class","minor_heading");
             spantag.innerHTML=titles[d];
-            var node = document.createTextNode(data[d])
+            let node = document.createTextNode(data[d])
             para.appendChild(spantag);
             para.appendChild(node);
             para.appendChild(document.createElement("br"));
         }
-        var childo = document.createElement("div");
+        let childo = document.createElement("div");
         childo.setAttribute("class","childof");
         childo.appendChild(para);
         child.appendChild(childo);
