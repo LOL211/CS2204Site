@@ -9,11 +9,35 @@ function setup()
         function(){
             setcinemas();
     });
+    let maps=document.getElementsByClassName("desc_text");
 
 
     for(let x = 0; x<cinemas.length; x++)
-    document.getElementById('cinemas').innerHTML+='<option value="'+cinemas[x].branchName+'">'+cinemas[x].branchName+'</option>';
+   { document.getElementById('cinemas').innerHTML+='<option value="'+cinemas[x].branchName+'">'+cinemas[x].branchName+'</option>';
+    if(x<maps.length)
+   maps[x].getElementsByTagName('h4')[0].innerHTML=cinemas[x].branchName;
+else{
 
+    let mapsextra = document.getElementsByClassName('maps')[Math.floor((Math.random() * 3) + 0)];
+    mapsextra.getElementsByClassName('desc_text')[0].getElementsByTagName('h4')[0].innerHTML=cinemas[x].branchName;
+    document.getElementById('mapslocation').innerHTML+='<div class="maps">'+mapsextra.innerHTML+'</div>';
+
+}
+   }
+
+    if(maps.length>cinemas.length)
+    {
+        for(let y= cinemas.length; y<maps.length; y++)
+            {
+               
+                var fdg = document.getElementById('mapslocation').getElementsByClassName('maps')[y].remove();
+             
+            }
+    }
+    
+   // maps[0].innerHTML="";
+   
+    
     setcinemas();
 }
 
