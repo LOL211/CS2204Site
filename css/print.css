@@ -70,6 +70,7 @@ text-align: center;
 form input[type=text]{
     background-color: #e8e8e8;;
     font-size:1rem;
+    width:20rem;
     font-family: 'Montserrat', sans-serif;;
     font-weight: bold;
 }
