@@ -70,57 +70,57 @@ function getCinemas() {
                     id:1,
                     shows:[
                         {
-                            index:6,
+                            index:7,
                             datetime:"11 Nov, Wed - 9:00am",
                             house:4
                         }
                     ]
                 },
                 {
-                    id:1,
+                    id:2,
                     shows:[
                         {
-                            index:6,
+                            index:8,
                             datetime:"11 Nov, Wed - 9:00am",
                             house:4
                         }
                     ]
                 },
                 {
-                    id:1,
+                    id:3,
                     shows:[
                         {
-                            index:6,
+                            index:9,
                             datetime:"11 Nov, Wed - 9:00am",
                             house:4
                         }
                     ]
                 },
                 {
-                    id:1,
+                    id:4,
                     shows:[
                         {
-                            index:6,
+                            index:10,
                             datetime:"11 Nov, Wed - 9:00am",
                             house:4
                         }
                     ]
                 },
                 {
-                    id:1,
+                    id:5,
                     shows:[
                         {
-                            index:6,
+                            index:11,
                             datetime:"11 Nov, Wed - 9:00am",
                             house:4
                         }
                     ]
                 },
                 {
-                    id:1,
+                    id:6,
                     shows:[
                         {
-                            index:6,
+                            index:12,
                             datetime:"11 Nov, Wed - 9:00am",
                             house:4
                         }
