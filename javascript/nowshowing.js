@@ -3,14 +3,13 @@
 
 const cinemas = getCinemas();
 
+
+
 function setup()
 {
-    document.getElementById('cinemas').addEventListener("change",
-        function(){
-            setcinemas();
-    });
+    
+    document.getElementById('cinemas').addEventListener("change",setcinemas);
     let maps=document.getElementsByClassName("desc_text");
-
 
     for(let x = 0; x<cinemas.length; x++)
    { document.getElementById('cinemas').innerHTML+='<option value="'+cinemas[x].branchName+'">'+cinemas[x].branchName+'</option>';
