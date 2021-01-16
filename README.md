@@ -6,3 +6,7 @@ Master branch represents HTML structure
 CW2 branch is HTML+CSS 
 CW3 branch is HTML+CSS+JS added
 Total time worked on the website is roughly 1 week at best
+
+link to html only - https://cs2204cw1.netlify.app/
+link to html+css - https://cs2204cw2.netlify.app/
+JS version was not uploaded due to issues with scripts not loading properly
