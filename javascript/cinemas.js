@@ -62,13 +62,7 @@ function getCinemas() {
                     ]
                 }
             ]
-<<<<<<< HEAD
-=======
+
         }
-                    ]
-                }
-            ]
->>>>>>> f4e6d7ae48ab80f841bd83b367f01d4f521f9c2b
-        }
-    ]
+        ]
 }
